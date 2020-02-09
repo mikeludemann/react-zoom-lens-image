@@ -189,7 +189,7 @@ export default class ZoomLensImage extends Component {
 		}
 
 		//zoomLens("#" + this.props.id, ".zoom--lens--image--container");
-		zoomMagnifyingGlasses("#" + this.props.id, 5)
+		zoomMagnifyingGlasses("#" + this.props.id, this.props.zoomLevel);
 
 	}
 
@@ -212,5 +212,6 @@ ZoomLensImage.propTypes = {
 	imagename: PropTypes.string.isRequired,
 	alttext: PropTypes.string.isRequired,
 	id: PropTypes.string.isRequired,
-	class: PropTypes.string
+	class: PropTypes.string,
+	zoomLevel: PropTypes.number.isRequired
 }

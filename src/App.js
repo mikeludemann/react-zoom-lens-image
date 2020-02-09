@@ -18,6 +18,7 @@ function App() {
           height="400"
           imagename="https://www.scinexx.de/wp-content/uploads/0/1/01-34892-supernova.jpg"
           alttext="Supernova"
+          zoomLevel={5}
         >
         </ZoomLensImage>
 			</section>
